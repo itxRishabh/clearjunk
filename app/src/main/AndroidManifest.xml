@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.clearcache">
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+
+
+    <application
+        android:icon="@drawable/ic_launcher_background"
+        android:label="@string/app_name">
+
+        <!-- MainActivity is the main launcher activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/Clearcache"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AboutActivity is another activity in the app -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false">
+            <!-- Add any intent filters or activity configuration here -->
+        </activity>
+
+        <!-- Add more activities here with android:exported as needed -->
+
+    </application>
+
+</manifest>

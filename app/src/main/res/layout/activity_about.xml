@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Rishabh Dev"
+        android:textSize="24sp"
+        android:layout_centerInParent="true"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/cleared_cache_text_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_cache_button_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#333333"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
